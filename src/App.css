@@ -1,0 +1,147 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.contenedor{
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+h1{
+  text-align: center;
+  color: #333;
+}
+
+.formulario{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+input{
+  padding: 10px;
+}
+
+button{
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td{
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+th{
+  background-color: #0077cc;
+  color: white;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+@media(max-width:768px){
+
+  .formulario{
+    flex-direction: column;
+  }
+
+}
+
+
+.busqueda{
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 250px;
+}
+
+
+
+.header h1{
+  font-size: 40px;
+}
+
+.navbar{
+  background-color: #222;
+  padding: 15px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.bienvenida{
+  text-align: center;
+  padding: 40px;
+}
+
+.bienvenida h2{
+  font-size: 35px;
+}
+
+.bienvenida p{
+  font-size: 18px;
+}
+
+.footer{
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+
+/*hacer fijo el header*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: #1e3a8a;
+  color: white;
+
+  padding: 8px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.contenedor {
+  padding-top: 120px;
+}
+.header h1,
+.header p {
+  color: white;
+}
+
+section {
+  scroll-margin-top: 160px;
+}
+
+.header h1 {
+  font-size: 22px;
+  margin: 0;
+}

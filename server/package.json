@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "import-db": "node import-db.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marioafn/backend-mafntech.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marioafn/backend-mafntech/issues"
+  },
+  "homepage": "https://github.com/marioafn/backend-mafntech#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.3"
+  },
+  "devDependencies": {},
+  "description": ""
+}

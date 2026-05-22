@@ -44,7 +44,7 @@ const [idArticuloEditar, setIdArticuloEditar] = useState(null)
 
   const obtenerFabricantes = () => {
 
-    fetch('http://https://crud-backend-2qmg.onrender.com/fabricantes')
+    fetch('https://crud-backend-2qmg.onrender.com/fabricantes')
       .then(respuesta => respuesta.json())
       .then(datos => {
         setFabricantes(datos)
@@ -58,7 +58,7 @@ const [idArticuloEditar, setIdArticuloEditar] = useState(null)
   //
   const obtenerArticulos = () => {
 
-  fetch('http://https://crud-backend-2qmg.onrender.com/articulos')
+  fetch('https://crud-backend-2qmg.onrender.com/articulos')
     .then(respuesta => respuesta.json())
     .then(datos => {
       setArticulos(datos)
@@ -77,7 +77,7 @@ const [idArticuloEditar, setIdArticuloEditar] = useState(null)
       fecha_fundacion: fecha
     }
 
-    const respuesta = await fetch('http://https://crud-backend-2qmg.onrender.com/fabricantes', {
+    const respuesta = await fetch('https://crud-backend-2qmg.onrender.com/fabricantes', {
 
       method: 'POST',
 
@@ -106,7 +106,7 @@ const [idArticuloEditar, setIdArticuloEditar] = useState(null)
 
   const eliminarFabricante = async (id) => {
 
-  await fetch(`http://https://crud-backend-2qmg.onrender.com/fabricantes/${id}`, {
+  await fetch(`https://crud-backend-2qmg.onrender.com/fabricantes/${id}`, {
 
     method: 'DELETE'
 
@@ -130,7 +130,7 @@ const modificarFabricante = async () => {
     fecha_fundacion: fecha
   }
 
-  await fetch(`http://https://crud-backend-2qmg.onrender.com/fabricantes/${idEditar}`, {
+  await fetch(`https://crud-backend-2qmg.onrender.com/fabricantes/${idEditar}`, {
 
     method: 'PUT',
 
@@ -163,7 +163,7 @@ const agregarArticulo = async () => {
     idfabricante: fabricanteArticulo
   }
 
-  await fetch('http://https://crud-backend-2qmg.onrender.com/articulos', {
+  await fetch('https://crud-backend-2qmg.onrender.com/articulos', {
 
     method: 'POST',
 
@@ -190,7 +190,7 @@ const agregarArticulo = async () => {
 //eliminar articulo
 const eliminarArticulo = async (id) => {
 
-  await fetch(`http://https://crud-backend-2qmg.onrender.com/articulos/${id}`, {
+  await fetch(`http://crud-backend-2qmg.onrender.com/articulos/${id}`, {
 
     method: 'DELETE'
 
@@ -213,7 +213,7 @@ const modificarArticulo = async () => {
     idfabricante: fabricanteArticulo
   }
 
-  await fetch(`http://https://crud-backend-2qmg.onrender.com/articulos/${idArticuloEditar}`, {
+  await fetch(`http://crud-backend-2qmg.onrender.com/articulos/${idArticuloEditar}`, {
 
     method: 'PUT',
 
